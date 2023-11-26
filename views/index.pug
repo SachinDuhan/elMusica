@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>elMusica</title>
+    //- <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="plate">
+
+            <div class="nav">
+                <div class="brand">
+                    <img src="../static/tone-logo.png" alt="elMusica">elMusica
+                </div>
+                <div class="pages">
+                    <ul>
+                        <li><a href=""><img src="../static/home.png" alt="home"> Home</a></li>
+                        <li><a href=""><img src="../static/search.png" alt="search"> Search</a></li>
+                    </ul>
+                </div>
+                <div class="library">
+                    <div class="head-lib"><img src="../static/library.png" alt="library"> Library</div>
+                    <div class="collection current">
+                        <img src="../static/record.png" alt="collection">
+                        <div class="lib-div">
+                            <p class="lib-div-title">Collection</p>
+                            <p class="lib-div-desc">.3 songs</p>
+                        </div>
+                    </div>
+                    <div class="fav">
+                        <img src="../static/record.png" alt="favs">
+                        <div class="lib-div">
+                            <p class="lib-div-title">Favorites</p>
+                            <p class="lib-div-desc">.0 songs</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="main collection-page">
+                    <div class="songList">
+                        <div class="heading">
+                            <h1>Collection</h1>
+                        </div>
+                        //- <div class="songCapsule">
+                        //-     <img src="../static/song-icon.png" alt="song">
+                        //-     <div class="songInfo">
+                        //-         <span class="songName">Thrift Shop</span>
+                        //-         <span class="songLen">03:48</span>
+                        //-     </div>
+                        //-     <img src="../static/play.png" alt="play-song">
+                        //- </div>
+                        //- <div class="songCapsule">
+                        //-     <img src="../static/song-icon.png" alt="song">
+                        //-     <div class="songInfo">
+                        //-         <span class="songName">Escaping Gravity</span>
+                        //-         <span class="songLen">03:25</span>
+                        //-     </div>
+                        //-     <img src="../static/play.png" alt="play-song">
+                        //- </div>
+                        //- <div class="songCapsule">
+                        //-     <img src="../static/song-icon.png" alt="song">
+                        //-     <div class="songInfo">
+                        //-         <span class="songName">Giving up the gun</span>
+                        //-         <span class="songLen">05:03</span>
+                        //-     </div>
+                        //-     <img src="../static/play.png" alt="play-song">
+                        //- </div>
+                    </div>
+                    <div class="wallpaper">
+                        .songSettings 
+                            .mode
+                                <div class="modeList hidden selectedMode">Loop all</div>
+                                <div class="modeList hidden">Shuffle</div>
+                                <div class="modeList hidden">Loop one</div>
+                            .duration
+                                | ---
+                    </div>
+                </div>
+            </div>
+        </div>
+        //- <!-- <div>
+        //-     <div class="player">
+        //-         <div class="play">
+        //-             <input type="range" name="range" id="myProgressBar" min="0" max="100">
+        //-             <div class="icons">
+        //-                 <span class="playName">Thrift Shop</span>
+        //-                 <img src="../static/previous.png" alt="previous">
+        //-                 <img src="../static/play.png" alt="play">
+        //-                 <img src="../static/next.png" alt="next">
+        //-             </div>
+        //-         </div>
+        //-          <img src="../static/BHFO.gif" alt="equilizer">
+        //-     </div>
+        //- </div> -->
+        <div class="playerGround">
+            <div class="songPlayInfo"></div>
+            <div class="player">
+                <input type="range" name="range" id="myProgressBar" min="0" max="100" value="0">
+                <div class="icons">
+                    <img src="../static/previous.png" id="masterPrevious" alt="previous">
+                    //- <!-- <img src="../static/play.png" alt="play"> -->
+                    <div id="masterPlay" class="play-pause play"></div>
+                    <img src="../static/next.png" id="masterNext" alt="next">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    //- <script src="https://kit.fontawesome.com/a9542a8e0b.js" crossorigin="anonymous"></script>
+    script(src="https://kit.fontawesome.com/a9542a8e0b.js")
+    //- <script src="script.js"></script>
+    script(src="../static/script.js")
+    <!-- script(src="../static/c.js") -->
+    style
+        include ../static/style.css
+</body>
+</html>
